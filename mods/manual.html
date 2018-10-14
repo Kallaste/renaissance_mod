@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 	<head>
+		<title>The Guild 2 Renaissance - ModLauncher - Manual</title>
+    <meta charset="utf-8">
+		<style type="text/css">
+			html {color:#ffffff; background-color:#404000; font-family:Verdana; font-size: 0.9em; }
+			a:link { font-weight:bold; color:lime; text-decoration:none; }
+			a:visited { font-weight:bold; color:silver; text-decoration:none; }
+			a:focus { font-weight:bold; color:red; text-decoration:underline; }
+			a:hover { font-weight:bold; color:green; text-decoration:none; }
+			a:active { font-weight:bold; color:lime; text-decoration:underline; }
+			#author {font-size: 0.8em; color:#000000; background-color:#ffffff; border:1px solid #000; padding:8px; display:block; vertical-align:middle; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius: 5px; }
+		</style>
+	</head>
+	<body>
+
+		<a name="languages"></a>
+		<a href="#english"><img src="../Textures/ModLauncher/en.gif" alt="english"></a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#german"><img src="../Textures/ModLauncher/de.gif" alt="deutsch"></a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#french"><img src="../Textures/ModLauncher/fr.gif" alt="français"></a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#spanish"><img src="../Textures/ModLauncher/es.gif" alt="español"></a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#italian"><img src="../Textures/ModLauncher/it.gif" alt="italiano"></a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#polish"><img src="../Textures/ModLauncher/pl.gif" alt="polski"></a>
+		<br>
+
+		<p><hr></p>
+
+		<div id="author" style="min-height:120px;background:url(../Textures/ModLauncher/Runeforge_logo.png) no-repeat 100% 0% #FFF;">
+			<a href="http://www.nordicgames.at" target="blank">www.nordicgames.at</a><br>
+			<a href="http://forum.nordicgames.at" target="blank">forum.nordicgames.at</a><br>
+			<a href="http://www.facebook.com/theguildgame" target="blank">www.facebook.com/theguildgame</a><p>
+			<a href="http://www.gilde2.de" target="blank">The Guild Series <b>Fan-Page</b></a><br>
+			<a href="http://modding.gilde3.info" target="blank">Collection of Mods for <b>TG2Ren 4.2</b></a><br>
+			<a href="http://forum.runeforge-games.net" target="blank">Modding Community</b></a>
+		</div>
+
+		<p><hr></p>
+
+		<a name="english"><h1><img src="../Textures/ModLauncher/en.gif"> English - Manual</h1></a>
+		Welcome to <b>The Guild 2 - Renaissance ModLauncher</b><p>
+		<h2>Contents</h2>
+		<li><a href="#english_whatis">The ModLauncher<a></li>
+		<li><a href="#english_functions">How the ModLauncher works<a></li>
+		 <li><a href="#english_modder">Structuring modifications (for modders)<a></li>
+		
+		<a name="english_whatis"></a>
+		<h2>The ModLauncher</h2>
+		The ModLauncher was developed to install a single modification (short: mod) in <b>The Guild 2 - Renaissance</b>. When doing so, the original files and saves are backed up in a special folder before the modified files are installed and played.<br>
+		If the original version of the game is to be restored or another mod installed, any saves are also backed up with the mod so that they aren’t lost.<br><br>
+		
+		<a href="#english">[ back ]</a><p>
+		
+		<a name="english_functions"></a>
+		<h2>How the ModLauncher works</h2>
+		<b>1) Installing a mod:</b><br>
+		To install a mod, unpack it in the following folder:<br><br>
+		<b>TG2REN installation path/mods/</b><br><br>
+		Ensure that the downloaded mod is compatible with the ModLauncher (mod for Patch 4.2).<br>
+		The structure of the mod should be mod name/ folder structure TG2REN.<br><br>
+		
+		<b>2) Activate mod for playing the game:</b><br>
+		Once you have unpacked your mod, open the ModLauncher (after installation, the patch offers you the option of creating a desktop link to the ModLauncher). Click "Manage Modification", you will then see an overview box, in which all the available mods are listed (i.e. those you have extracted correctly).<p>
+		<b>IMPORTANT</b>: You can only ever activate one mod at a time in the game!<p>
+		Select the mod you wish to activate. Information about this mod will now appear in the ModLauncher. To activate the mod, click "Apply". The ModLauncher will now overwrite all the files for the selected mod in the game folder. Then click "Back" and then "Start the Game" in the main menu of the ModLauncher.<br>
+		Your Guild game will now start as usual and your mod is active.<br><br>
+		
+		<b>3) Deactivate mod:</b><br>
+		To deactivate a mod, open the ModLauncher, click "Manage Modification", select the active mod and then click "Reset to Original Version". The ModLauncher will now restore all original files.<br><br>
+		
+		<a href="#english">[ back ]</a><p>
+		
+		<a name="english_modder"></a>
+		<h2>Structuring modifications (for modders)</h2>
+		Only a few steps are required to make your existing modifications compatible to ModLauncher. Please always ensure that you synchronise the file versions of your mods with that of Patch 4.2.<br>
+		To make it easier for you, we’ve included the "HotTeaMod" with the patch. Here you can look at the structures of the different files.<p>
+		<b>IMPORTANT</b>: Never use the following characters as they are XML control characters! <b>< > & " ' =</b><br><br>
+		
+		<b>1) Structure of a mod:</b><br>
+		It is important to use the correct folder structure. The original "The Guild 2 Renaissance" folder structure is used for a mod.<br>
+		Example: Installation directory of TG2REN/mods/YOUR MOD NAME/Structure directory of TG2REN.<br>
+		Additionally, 3 new files are required: data.xml, description.html and text.xml, which must be located in the root directory of your mod.<br><br>
+		
+		<b>2) Structure of data.xml:</b><br> 
+		As a template, it is recommended to edit the data.xml file from the example mod as follows.<p>
+		<ul>
+		 <li><i>Author</i>: That’s you :)<br></li>
+		 <li><i>Version</i>: Enter the version number of your mod here.<br></li>
+		 <li><i>Title</i>: Enter the title of your mod here.<br></li>
+		 <li><i>File</i>: Files that are to be completely replaced, changed or added by your mod are placed in a file tag.</li>
+		 This step has to be completed for every file in your mod, otherwise the ModLauncher won’t know what to do.</li>
+		 <li><i>Path</i>: Here, enter the correct path to the file, which should be replaced or modified by the ModLauncher.</li>
+		 Example: .\mods\NAME OF YOUR MOD\CORRECT FOLDER STRUCTURE\YOUR MODIFIED FILE INCL. EXTENSION<br>
+		\mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga
+		 <li><i>State</i>: Below each file tag you will find a state tag. This tag tells the ModLauncher how to handle the specified file.</li>
+		The following state tags can be used: "new" (if a completely new file should be added, i.e. one that currently doesn’t exist) and "changed" (if a file already exists but has been edited for your mod).<br>
+		<b>NOTE</b>: The original files, which are modified with the changed tag, are saved in the mods/Origin folder.
+		</ul>
+		
+		<b>3) Structure of description.html:</b><br> 
+		As a template, it is recommended to edit the description.html file from the example mod.<br>
+		The description.html file is opened in the ModLauncher when a mod is selected in the list. This should contain all the information about the mod.<br>
+		The file is in html and can be very easily edited. As can be seen from the example file, the description.html file can also be set up in several different languages.<br><br>
+		
+		<b>4) Structure of text.xml:</b><br> 
+		As a template, it is recommended to copy the text.xml file from the example mod and to adapt it to your mod.<br>
+		The text.xml can be set up in several languages. The ModLauncher recognises the chosen language version of <b>The Guild 2 Renaissance</b> (found in the config.ini file) and installs this directly from the text.xml file. If the selected language is not available in the text.xml file, English is automatically used. If English is also unavailable, the first language listed is used.<br>
+		The text.dbt file from <b>The Guild 2 Renaissance</b> does <b>not</b> need to be changed. All texts added or changed by the text.xml file will be adapted by the ModLauncher.<p>
+		<ul>
+		 <li><i>ID</i>: The ID of the text, which is assigned by the ModLauncher in the text.dbt file (must be unique, except for the "changed" state, as the ID of the original entry is used)</li>
+		 <b>IMPORTANT</b>: Text IDs must be greater than 18000 so that your mod remains compatible for future patches :).<br>
+		 <li><i>Label</i>: The unique text label, which is used as an identifier for the text in the game, e.g.: _ITEM_HerbTea_NAME_+0.</li>
+		 <li><i>Text language="LANGUAGE OF THE TEXT e.g. "english" for English"</i>: Enter your text here to be associated with the above-mentioned label.</li>
+		 <b>NOTE</b>: <b>The Guild 2 Renaissance</b> Patch 4.2 has been localised in the following languages: English, German, French, Spanish, Italian, Polish.<br>
+		 <li><i>State</i>:The state tag indicates whether existing text is to be edited, or if completely new text is to be added. The tags "new" (for new texts) and "changed" (for texts that are to be changed) can be used.</li>
+		</ul>
+
+		<a href="#english">[ back ]</a>
+
+		<p><hr></p>
+
+		<a name="german"><h1><img src="../Textures/ModLauncher/de.gif"> Deutsch - Handbuch</h1></a>
+		Willkommen zum <b>Die Gilde 2 - Renaissance - ModLauncher</b><p>
+		<h2>Inhalt</h2>
+		<li><a href="#german_whatis">Der ModLauncher<a></li>
+		<li><a href="#german_functions">Wie der ModLauncher funktioniert<a></li>
+ 		<li><a href="#german_modder">Aufbau von Modifikationen (f&uuml;r Modder)<a></li>   
+
+		<a name="german_whatis"></a>
+		<h2>Der ModLauncher</h2>
+		Der ModLauncher wurde entwickelt, um eine einzelne Modifikation (kurz: Mod) in <b>Die Gilde 2 - Renaissance</b> 
+    zu installieren. Dabei werden die originalen Dateien und die Spielst&auml;nde in einem speziellen Ordner gesichert, bevor die modifizierten 
+    Dateien installiert bzw. eingespielt werden.<br>
+		Wenn die originale Version des Spiels wieder hergestellt bzw. wenn eine andere Mod installiert werden soll, werden auch etwaige 
+    Spielst&auml;nde mit der Mod gesichert, so dass diese nicht verloren gehen.<br><br>
+
+		<a href="#german">[ zur&uuml;ck ]</a><p>
+		
+		<a name="german_functions"></a>
+		<h2>Wie der ModLauncher funktioniert</h2>
+		<b>1) Mod installieren:</b><br>
+		Um eine Mod zu installieren, entpackt diese in folgenden Ordner:<br><br>
+		<b>TG2REN Installationspfad/mods/</b><br><br>
+		Achtet darauf das die runtergeladene Mod mit dem ModLauncher kompatibel ist (Mod f&uuml;r Patch 4.2).<br>
+		Der Aufbau der Mod sollte Modname/ Ordnerstruktur TG2REN sein.<br><br>
+
+		<b>2) Mod zum Spielen Spiel aktivieren:</b><br>
+		Habt Ihr eure Mod entpackt, &ouml;ffnet ihr den ModLauncher (Der Patch bietet euch am Ende der Installation die 
+		M&ouml;glichkeit, eine Desktopverkn&uuml;pfung vom ModLauncher anzulegen). 
+		Klickt auf "Manage Modification", anschließend gelang ihr in ein &Uuml;bersichtsfeld, in welchem alle Mods aufgelistet 
+		werden, die euch zur Verf&uuml;gung stehen (ihr also korrekt entpackt habt).<p>
+		<b>WICHTIG</b>: Ihr k&ouml;nnt immer nur einen Mod gleichzeitig im Spiel aktivieren!<p>
+		W&auml;hlt die Mod aus, welche ihr aktivieren wollt. Es erscheinen nun Infos zu diesem Mod im ModLauncher. 
+		Um die Mod zu aktivieren, klickt auf "Apply". Der ModLauncher &uuml;berschreibt jetzt alle Dateien von der ausgew&auml;hlten Mod in den Spielordner. 
+		Anschließend klickt ihr auf "Back" und im Hauptmen&uuml; des ModLaunchers auf "Start the Game".<br>
+		Euer Gilde-Spiel startet nun wie gewohnt und eure Mod ist aktiv.<br><br>
+
+		<b>3) Mod deaktivieren:</b><br>
+		Um eine Mod zu deaktivieren, &ouml;ffnet Ihr den ModLauncher, klickt auf "Manage Modification", w&auml;hlt die aktive Mod aus und klickt 
+		anschließend auf "Reset to Original Version". Der ModLauncher stellt nun alle Orginaldateien wieder her.<br><br>
+
+		<a href="#german">[ zur&uuml;ck ]</a><p>
+
+		<a name="german_modder"></a>
+		<h2>Aufbau von Modifikationen (f&uuml;r Modder)</h2>
+		Um eure bestehenden Modifikationen "ModLauncher-kompatibel" zu machen, sind nur ein paar wenige Handgriffe n&ouml;tig. 
+		Achtet bitte stets darauf, dass ihr die Dateiversionen eurer Mods mit denen von Patch 4.2 abgleicht.<br>
+		Um es euch einfacher zu machen, haben wir dem Patch den "HotTeaMod" beigepackt. Hier k&ouml;nnt ihr euch die Strukturen der verschiedenen Dateien ansehen.<p>
+		<b>WICHTIG</b>: Niemals die folgenden Zeichen verwenden, da dies Steuerzeichen von XML sind! <b>< > & " ' =</b><br><br>
+
+		<b>1) Aufbau eines Mods:</b><br>
+		Es ist wichtig, die korrekte Ordnerstruktur zu verwenden. F&uuml;r eine Mod wird die originale "Die Gilde 2 Renaissance" Ordnerstruktur verwendet.<br>
+		Beispiel: Installationsverzeichnis von TG2REN/mods/EUER MODNAME/Strukturverzeichnis von TG2REN.<br>
+		Zus&auml;tzlich werden 3 neue Dateien ben&ouml;tigt: data.xml, description.html und text.xml, welche sich im Hauptverzeichnis eurer Mod befinden m&uuml;ssen.<br><br>
+
+		<b>2) Aufbau der data.xml:</b><br> 
+		Als Vorlage empfielt es sich, die aus der Beispiel-Mod verwendete data.xml wie folgt zu bearbeiten.<p>
+		<ul>
+		 <li><i>Author</i>: Das bist du :)<br></li>
+		 <li><i>Version</i>: Trage hier die Versionsnummer deiner Mod ein.<br></li>
+		 <li><i>Titel</i>: Trage hier den Titel deiner Mod ein.<br></li>
+		 <li><i>File</i>: In einen File-Tag werden Dateien gesetzt, welche komplett ersetzt, ver&auml;ndert oder neu hinzugef&uuml;gt werden durch eure Mod.</li>
+		 Dieser Schritt muss f&uuml;r jede Datei aus eurer Mod durchgef&uuml;hrt werden, da der ModLauncher anderenfalls nicht weiß, was er machen soll.</li>
+		 <li><i>Path</i>: Tragt hier den korrekten Path zu der Datei an, welche durch den ModLauncher ersetzt oder modifiziert werden soll.</li>
+		 Beispiel: .\mods\NAME DEINES MOD\KORREKTE ORDNERSTRUKTUR\DEINE VER&Auml;NDERTE DATEI INKL. ENDUNG<br>
+		 \mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga
+		 <li><i>State</i>: Unter jedem File-Tag findet ihr einen State-Tag. Dieser Tag sagt dem ModLauncher, wie er das dar&uuml;ber angegebene File behandeln soll.</li>
+			Folgende State-Tag k&ouml;nnen verwendet werden: "new" (Wenn eine Datei komplett neu hinzugef&uuml;gt wird, sie also bisher nicht existiert.) und "changed" (Wenn eine Datei bereits existiert, jedoch von dir f&uuml;r deine Mod ge&auml;ndert wurde.)<br>
+			<b>HINWEIS</b>: Die Orginaldateien, welche mit dem Tag Changed ver&auml;nderten werden, werden im Ordner mods/Origin gespeichert.
+		</ul>
+
+		<b>3) Aufbau der description.html:</b><br> 
+		Als Vorlage empfiehlt es sich, die aus der Beispiel-Mod verwendete description.html zu bearbeiten.<br>
+		Die description.html wird im ModLauncher immer dann aufgerufen, wenn eine Mod in der Liste ausgew&auml;hlt wird. Hier sollte man alle Informationen &uuml;ber die Mod erhalten.<br>
+		Die Datei ist in html aufgebaut und kann sehr leicht bearbeitet werden. Wie der Beispieldatei entnommen werden kann, kann die description.html auch mehrsprachig aufgebaut werden.<br><br>
+		
+		<b>4) Aufbau der text.xml:</b><br> 
+		Als Vorlage empfiehlt es sich, die aus der Beispiel-Mod verwendete text.xml zu kopieren und an eure Mod anzupassen.<br>
+		Die text.xml kann mehrsprachig aufgebaut werden. Der ModLauncher erkennt die eingestellte Sprachversion von <b>Die Gilde 2 Renaissance</b> (zu finden in der config.ini) und 
+		installiert diese direkt aus der text.xml. Ist die eingestellte Sprache in der text.xml nicht vorhanden, wird automatisch Englisch verwendet. Ist Englisch ebenso nicht vorhanden, 
+		wird die zuerst aufgelistete Sprache verwendet.<br>
+		Die text.dbt aus <b>Die Gilde 2 Renaissance</b> muss <b>nicht</b> ver&auml;ndert werden. Alle durch die text.xml hinzugef&uuml;gten oder ver&auml;nderten Texte werden durch den ModLauncher angepasst.<p>
+		<ul>
+		 <li><i>ID</i>: Die ID des Textes, welcher durch den ModLauncher in der Text.dbt vergeben wird (Muss einzigartig sein, außer beim State "changed", da muss die ID des originalen Eintrages verwendet werden)</li>
+		 <b>WICHTIG</b>: Text ID's m&uuml;ssen gr&ouml;ßer als 18000 sein, damit eure Mod auch f&uuml;r zuk&uuml;nftige Patches kompatibel bleibt :).<br>
+		 <li><i>Label</i>: Das eindeutige Textlabel, welches als Identifikator des Textes im Spiel verwendet wird, z.B.: _ITEM_HerbTea_NAME_+0.</li>
+		 <li><i>Text language="SPRACHE DES TEXTES z.B. "english" f&uuml;r Englisch"</i>: Hier schreibt ihr euren Text rein, der mit dem o.g. Label assoziiert werden soll.</li>
+		 <b>HINWEIS</b>: <b>Die Gilde 2 Renaissance</b> Patch 4.2 wurde in den folgenden Sprachen lokalisiert: english, german, french, spanish, italian, polish.<br>
+		 <li><i>State</i>:Der State-Tag gibt an, ob ein bestehender Text ver&auml;ndert wird, oder ein v&ouml;llig neuer Text hinzugekommen ist. Es k&ouml;nnen die Tags 
+		 "new" (f&uuml;r neue Texte) oder "changed" (f&uuml;r Texte, die ge&auml;ndert werden sollen) verwendet werden.</li>
+		</ul>
+
+		<a href="#german">[ zur&uuml;ck ]</a><p>
+
+		<p><hr></p>
+
+		<a name="french"><h1><img src="../Textures/ModLauncher/fr.gif"> Français - Manuel</h1></a>
+		Français - Manuel</h1></a>
+		Bienvenue dans <b>The Guild 2 - Renaissance ModLauncher</b><p>
+		<h2>Sommaire</h2>
+		<li><a href="#french_whatis">Le ModLauncher<a></li>
+		<li><a href="#french_functions">Son fonctionnement<a></li>
+		 <li><a href="#french_modder">Modifications de structure (pour modders)<a></li>
+		
+		<a name="french_whatis"></a>
+		<h2>Le ModLauncher</h2>
+		Le ModLauncher a été conçu pour installer une seule modification (modif) dans <b>The Guild 2 - Renaissance</b>. Lors de l'opération, les fichiers et sauvegardes d'origine sont stockés dans un dossier spécial, avant l'installation et l'accès aux fichiers modifiés.<br>
+		Si la version d'origine du jeu doit être stockée ou si une autre modif doit être installée, les sauvegardes seront enregistrées avec la modif, afin de ne pas les perdre.<br><br>
+		
+		<a href="#french">[ retour ]</a><p>
+		
+		<a name="french_functions"></a>
+		<h2>Son ModLauncher fonctionnement</h2>
+		<b>1) Installer une modif :</b><br>
+		Pour installer une modif, extrayez-la dans le dossier suivant :<br><br>
+		<b>TG2REN installation path/mods/</b><br><br>
+		Assurez-vous que la modif téléchargée soit compatible avec ModLauncher (pour Patch 4.2).<br>
+		La structure doit être nom de modif/structure de dossier TG3REN.<br><br>
+		
+		<b>2) Activer la mode pour jouer :</b><br>
+		Une fois la modif extraite, ouvrez ModLauncher (après installation, le patch vous permet de créer un lien sur le bureau vers ModLauncher). Cliquez sur "Gérer modification", une fenêtre d'aperçu apparaît. Vous y trouverez toutes les modifs (celles que vous avez extraites sans erreur).<p>
+		<b>IMPORTANT</b> : Vous ne pouvez activer qu'une modif à la fois dans le jeu !<p>
+		Sélectionnez votre modif. Les informations correspondantes apparaissent dans ModLauncher. Pour activer la modif, cliquez sur "Appliquer". ModLauncher écrase alors tous les fichiers correspondants dans le dossier du jeu. Cliquez ensuite sur "Retour" puis sur "Démarrer le jeu" dans le menu principal de ModLauncher<br>
+		Votre partie de Guild débutera normalement, la modif activée.<br><br>
+		
+		<b>3) Désactiver la modif :</b><br>
+		Pour désactiver une modif, ouvrez ModLauncher, cliquez sur "Gérer modification", sélectionnez la modif active et cliquez sur "Réinitialiser vers la version originale". ModLauncher restaurera tous les fichiers d'origine.<br><br>
+		
+		<a href="#french">[ retour ]</a><p>
+		
+		<a name="french_modder"></a>
+		<h2>Modifications de structure (pour modders)</h2>
+		Quelques étapes seulement suffisent à rendre compatibles toutes les modifications à ModLauncher. Assurez-vous de toujours synchroniser les versions de vos modifs à ce Patch 4.2.<br>
+		Pour vous faciliter les choses, nous avons inclus le "HotTeaMod". Vous y trouverez les structures des différents fichiers.<p>
+		<b>IMPORTANT</b> : N'utilisez jamais ces caractères, il s'agit de commandes XML ! <b>< > & " ' =</b><br><br>
+		
+		<b>1) Structure d'une modif :</b><br>
+		Il est important d'utiliser la bonne structure de dossier. La structure d'origine de "The Guild 2 Renaissance" sert pour une modif.<br>
+		Exemple : Répertoire d'installation de TG2REN/mods/VOTRE NOM DE MODIF/Répertoire de structure de TG2REN.<br>
+		De même, 3 nouveaux fichiers sont requis : data.xml, description.html et text.xml, qui doivent se trouver dans le répertoire racine de votre modif.<br><br>
+		
+		<b>2) Structure de data.xml :</b><br> 
+		Pour modèle, il est recommandé d'éditer le fichier data.xml de l'exemple comme suit.<p>
+		<ul>
+		 <li><i>Author</i> : C'est vous :)<br></li>
+		 <li><i>Version</i> : Saisissez la version de votre modification.<br></li>
+		 <li><i>Title</i> : Saisissez le titre de votre modification.<br></li>
+		 <li><i>File</i> : Les fichiers qui doivent être complètement remplacés, changés ou ajoutés par votre modif sont placés dans une balise.</li>
+		 Cette étape doit être effectuée pour chaque fichier de votre modif. Dans le cas contraire, ModLauncher ne saura quoi en faire.</li>
+		 <li><i>Path</i> : Saisissez le chemin correct de votre fichier, qui doit être remplacé ou modifié par ModLauncher.</li>
+		 Exemple : .\mods\NOM DE LA MODIF\STRUCTURE DE DOSSIER\VOTRE FICHIER AVEC EXTENSION<br>
+		\mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga
+		 <li><i>État</i> : Sous chaque balise, vous trouverez un état. Cette balise indique à ModLauncher comment gérer le fichier en question.</li>
+		Vous trouverez différents états : "nouveau" (si un nouveau fichier doit être ajouté ; ex. : qui n'existerait pas) et "changé" (si un fichier existant a été édité par votre modif).<br>
+		<b>REMARQUE</b> : Les fichiers d'origine, modifiés par la balise changed, sont sauvegardés dans le dossier mods/Origin.
+		</ul>
+		
+		<b>3) Structure de description.html :</b><br> 
+		Pour modèle, il est recommandé d'éditer le fichier description.html de l'exemple.<br>
+		Le fichier description.html est ouvert dans ModLauncher quand une modif est sélectionnée dans la liste. Vous devriez trouver toutes les informations relatives à la modif.<br>
+		Le fichier est en html et peut facilement être modifié. À l'image du fichier pris en exemple, le fichier description.html peut lui aussi être installé en différentes langues.<br><br>
+		
+		<b>4) Structure de text.xml :</b><br> 
+		Il est recommandé, pour le modèle, de copier le texte.xml de la modif prise en exemple pour l'adapter à la vôtre.<br>
+		Le text.xml peut être paramétré en plusieurs langues. ModLauncher reconnaît la version choisie pour <b>The Guild 2 Renaissance</b> (dans le fichier config.ini) et l'installe directement depuis le fichier text.xml. Si la langue choisie n'est pas disponible dans le fichier text.xml, l'anglais est sélectionné par défaut. Si l'anglais n'est pas disponible, la première langue de la liste sera choisie.<br>
+		Le fichier text.dbt de <b>The Guild 2 Renaissance</b> n'a <b>pas</b> besoin d'être changé. Le texte ajouté ou modifié par le fichier text.xml sera adapté par ModLauncher.<p>
+		<ul>
+		 <li><i>ID</i> : L'ID du texte, assignée par ModLauncher dans le fichier text.dbt, doit être unique, hormis pour l'état "changé", car celle de l'entrée d'origine est utilisée.</li>
+		 <b>IMPORTANT</b> : Les ID doivent être supérieures à 18000, pour que votre modif soit compatible avec les prochains patches :).<br>
+		 <li><i>Label</i> : Texte unique, utilisé pour identifier celui du jeu, ex. : _ITEM_HerbTea_NAME_+0.</li>
+		 <li><i>Text language="LANGUE DU TEXTE ex. "english" pour Anglais"</i> : Saisissez ici votre texte à associer à celui ci-dessus.</li>
+		 <b>REMARQUE</b> : Le Patch 4.2 de <b>The Guild 2 Renaissance</b> a été localisé dans les langues suivantes : English, German, French, Spanish, Italian, Polish.<br>
+		 <li><i>State</i>: la balise state indique si le texte existant doit être modifié ou s'il faut en installer un nouveau. Les balises "nouveau" (nouveaux textes) et "changé" (textes à changer) sont possibles.</li>
+		</ul>
+
+		<a href="#french">[ retour ]</a>
+
+		<p><hr></p>
+
+		<a name="spanish"><h1><img src="../Textures/ModLauncher/es.gif"> Español - Manuel</h1></a>
+		Bienvenido al <b>ModLauncher de The Guild 2 - Renaissance </b><p>
+		<h2>Contenido</h2>
+		<li><a href="#spanish_whatis">El ModLauncher<a></li>
+		<li><a href="#spanish_functions">Cómo funciona el ModLauncher<a></li>
+		 <li><a href="#spanish_modder">Estructurar las modificaciones (para modders)<a></li>
+		
+		<a name="spanish_whatis"></a>
+		<h2>El ModLauncher</h2>
+		El ModLauncher ha sido desarrollado para instalar una modificación (o mod) en <b>The Guild 2 - Renaissance</b>. Antes de instalarla y jugar utilizando los archivos modificados, se creará una copia de seguridad de los archivos originales y de las partidas guardadas en una carpeta especial.<br>
+		En caso de que se restaure la versión original del juego o de que se instale otra modificación, se creará una copia de seguridad de las partidas guardadas junto con la modificación para que no se pierdan.<br><br>
+		
+		<a href="#spanish">[ atrás ]</a><p>
+		
+		<a name="spanish_functions"></a>
+		<h2>Cómo funciona el ModLauncher</h2>
+		<b>1) Instalar una modificación:</b><br>
+		Para instalar una modificación, debes descomprimirla en la siguiente carpeta:<br><br>
+		<b>TG2REN installation path/mods/</b><br><br>
+		Asegúrate de que la modificación que se ha descargado es compatible con el ModLauncher (modificación para el parche 4.2).<br>
+		La estructura de la modificación debe ser la siguiente: nombre de la modificación/estructura de la carpeta TG2REN.<br><br>
+		
+		<b>2) Activar una modificación para jugar:</b><br>
+		Una vez descomprimida la modificación, abre el ModLauncher (tras la instalación, el parche te ofrece la opción de crear un enlace del ModLauncher en el escritorio). Luego, haz clic en "Gestionar modificación" y aparecerá una caja con un resumen de todas las modificaciones disponibles (es decir, las que hayas extraído correctamente).<p>
+		<b>IMPORTANTE</b>: ¡El juego solo permite activar una modificación a la vez!<p>
+		Selecciona la modificación que quieras activar y aparecerá en el ModLauncher toda la información sobre la misma. Para activarla, haz clic en "Aplicar". A continuación, el ModLauncher sobrescribirá todos los archivos de la modificación seleccionada en la carpeta del juego. Haz clic en "Atrás" y luego en "Iniciar el juego" desde el menú principal del ModLauncher.<br>
+		De este modo, se iniciará el juego de la forma habitual, pero con la modificación activa.<br><br>
+		
+		<b>3) Desactivar una modificación:</b><br>
+		Para desactivar una modificación, abre el ModLauncher, haz clic en "Gestionar modificación" y selecciona la modificación activa. A continuación, haz clic en "Restaurar versión original" para que el ModLauncher restaure todos los archivos originales.<br><br>
+		
+		<a href="#spanish">[ atrás ]</a><p>
+		
+		<a name="spanish_modder"></a>
+		<h2>Estructurar las modificaciones (para modders)</h2>
+		Para hacer que tus modificaciones sean compatibles con el ModLauncher, basta con seguir los siguientes pasos. No olvides sincronizar las versiones de los archivos de tus modificaciones con las del parche 4.2.<br>
+		Para tu comodidad, hemos incluido en el parche la "HotTeaMod", donde puedes observar las estructuras de los distintos archivos.<p>
+		<b>IMPORTANTE</b>: ¡No uses nunca los siguientes caracteres, ya que son caracteres de control de XML! <b>< > & " ' =</b><br><br>
+		
+		<b>1) Estructura una modificación:</b><br>
+		Es importante que estructures las carpetas de la forma correcta. Para las modificaciones se utiliza la estructura de carpetas original de "The Guild 2 - Renaissance".<br>
+		Ejemplo: Directorio de instalación de TG2REN/mods/NOMBRE DE TU MODIFICACIÓN/Directorio de la estructura de TG2REN.<br>
+		Además, se necesitan 3 archivos nuevos: data.xml, description.html y text.xml, que deben colocarse en el directorio raíz de tu modificación.<br><br>
+		
+		<b>2) Estructura de data.xml:</b><br> 
+		Te recomendamos que utilices el archivo data.xml de la modificación de ejemplo para editarlo, a modo de plantilla, tal como se indica.<p>
+		<ul>
+		 <li><i>Autor</i>: Es decir, tú :)<br></li>
+		 <li><i>Versión</i>: Introduce aquí el número de versión de tu modificación.<br></li>
+		 <li><i>Título</i>: Introduce aquí el título de tu modificación.<br></li>
+		 <li><i>Archivo</i>: La etiqueta de archivo se asigna a los archivos que serán completamente sustituidos, editados o añadidos por tu modificación.</li>
+		 Debes completar este paso con todos los archivos de tu modificación, de lo contrario el ModLauncher no sabrá qué hacer.</li>
+		 <li><i>Itinerario</i>: Aquí debes introducir la ruta correcta del archivo, que será sustituido o modificado por el ModLauncher.</li>
+		 Ejemplo: .\mods\NOMBRE DE TU MODIFICACIÓN\ESTRUCTURA DE CARPETAS CORRECTA\TU ARCHIVO MODIFICADO CON LA EXTENSIÓN INCLUIDA<br>
+		\mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga
+		 <li><i>Estado</i>: Debajo de cada etiqueta de archivo encontrarás una etiqueta de estado que le indica al ModLauncher cómo gestionar el archivo especificado.</li>
+		Se pueden utilizar las siguientes etiquetas de estado: "nuevo" (para un archivo totalmente nuevo, es decir, que actualmente no existe) y "editado" (para un archivo existente pero que ha sido editado por tu modificación).<br>
+		<b>NOTA</b>: Los archivos originales modificados con la etiqueta "editado" se guardan en la carpeta mods/Origin.
+		</ul>
+		
+		<b>3) Estructura de description.html:</b><br> 
+		Te recomendamos que utilices el archivo description.html de la modificación de ejemplo para editarlo, a modo de plantilla.<br>
+		El archivo description.html se abre en el ModLauncher cuando seleccionas una modificación de la lista. Este archivo debe contener toda la información sobre la modificación.<br>
+		El archivo está en formato html y se puede editar fácilmente. Tal como puede verse en el archivo de ejemplo, el archivo description.html también se puede configurar en distintos idiomas.<br><br>
+		
+		<b>4) Estructura de text.xml:</b><br> 
+		Te recomendamos que copies el archivo text.xml de la modificación de ejemplo, a modo de plantilla, y que lo adaptes a la tuya.<br>
+		El archivo text.xml se puede configurar en distintos idiomas. El ModLauncher reconoce la versión elegida en <b>The Guild 2 - Renaissance</b> (que se encuentra en el archivo config.ini) y la instala directamente desde el archivo text.xml. Si el idioma seleccionado no está disponible en el archivo text.xml, se utilizará el inglés automáticamente. Si el inglés tampoco estuviera disponible, se utilizaría el primer idioma de la lista.<br>
+		<b>No</b> es necesario editar el archivo text.dbt de <b>The Guild 2 - Renaissance</b>. El ModLauncher adaptará todos los textos añadidos o editados por el archivo text.xml.<p>
+		<ul>
+		 <li><i>ID</i>: Es la ID del texto, asignada por el ModLauncher en el archivo text.dbt. Esta ID debe ser única (excepto en el estado "editado", ya que se utiliza la ID de la entrada original).</li>
+		 <b>IMPORTANTE</b>: Las ID de texto deben consistir en un número mayor que 18 000 para que tu modificación sea compatible con futuros parches :).<br>
+		 <li><i>Marca</i>: Es una marca de texto única que se utiliza como identificador para el texto del juego. Por ejemplo: _ITEM_HerbTea_NAME_+0.</li>
+		 <li><i>Idioma del texto="IDIOMA DEL TEXTO, por ejemplo, "english" para el inglés"</i>: Introduce el texto aquí para que se asocie con la marca que hemos mencionado más arriba.</li>
+		 <b>NOTA</b>: El parche 4.2 de <b>The Guild 2 - Renaissance</b> ha sido traducido a los idiomas siguientes: inglés, alemán, francés, español, italiano e polacco.<br>
+		 <li><i>Estado</i>: La etiqueta de estado indica si el texto existente debe ser editado, si es totalmente nuevo o si debe añadirse. Se pueden utilizar las etiquetas "nuevo" (para los textos nuevos) y "editado" (para los textos que van a cambiar).</li>
+		</ul>
+
+		<a href="#spanish">[ atrás ]</a>
+
+		<p><hr></p>
+
+		<a name="italian"><h1><img src="../Textures/ModLauncher/it.gif"> Italiano - Manuale</h1></a>
+		Benvenuto nel <b>ModLauncher di The Guild 2 - Renaissance</b><p>
+		<h2>Sommario</h2>
+		<li><a href="#italian_whatis">Il ModLauncher<a></li>
+		<li><a href="#italian_functions">Come funziona il ModLauncher<a></li>
+		 <li><a href="#italian_modder">Modifiche alla struttura (per i modder)<a></li>
+		
+		<a name="italian_whatis"></a>
+		<h2>Il ModLauncher</h2>
+		Il ModLauncher è stato sviluppato per consentire l'installazione di una singola modifica (o "mod") all'interno di <b>The Guild 2 - Renaissance</b>. Scegliendo di installare una mod, i file originali e i salvataggi verranno copiati in una cartella speciale prima di applicare i file modificati.<br>
+		Se è necessario ripristinare la versione originale del gioco, o nel caso in cui venisse installata un'altra mod, anche tutti i salvataggi verranno copiati insieme alla mod affinché non vadano persi.<br><br>
+		
+		<a href="#italian">[ indietro ]</a><p>
+		
+		<a name="italian_functions"></a>
+		<h2>Come funziona il ModLauncher</h2>
+		<b>1) Installare una mod:</b><br>
+		Per installare una mod, estraine il contenuto nella seguente cartella:<br><br>
+		<b>percorso di installazione di TG2REN/mods/</b><br><br>
+		Assicurati che la mod scaricata sia compatibile con il ModLauncher (introdotto con la patch 4.2).<br>
+		La struttura della mod deve essere la seguente: nome della mod/struttura cartella TG2REN.<br><br>
+		
+		<b>2) Attivare la mod all'interno del gioco:</b><br>
+		Una volta estratta la mod, apri il ModLauncher (al termine dell'installazione, la patch ti permette di creare un collegamento al ModLauncher sul desktop). Clicca su "Gestisci modifiche" per visualizzare una finestra con l'elenco di tutte le mod disponibili (es: quelle estratte correttamente).<p>
+		<b>IMPORTANTE</b>: è possibile attivare una sola mod alla volta durante il gioco!<p>
+		Seleziona la mod che vuoi attivare. Le informazioni a riguardo verranno visualizzate nel ModLauncher. Per attivare la mod, clicca su "Applica". Il ModLauncher sovrascriverà tutti i file per la mod selezionata all'interno della cartella dove è installato il gioco. A seguire, clicca su "Indietro" e successivamente su "Avvia il gioco" nel menu principale del ModLauncher.<br>
+		The Guild verrà avviato normalmente con la mod installata attiva.<br><br>
+		
+		<b>3) Disattivare le mod:</b><br>
+		Per disattivare una mod, apri il ModLauncher, clicca su "Gestisci modifiche", seleziona la mod attiva e clicca su "Ripristina versione originale". Il ModLauncher provvederà dunque a ripristinare tutti i file originali.<br><br>
+		
+		<a href="#italian">[ indietro ]</a><p>
+		
+		<a name="italian_modder"></a>
+		<h2>Modifiche alla struttura (per i modder)</h2>
+		Bastano pochi passaggi per rendere le tue modifiche esistenti compatibili con il ModLauncher. Ricordati sempre di sincronizzare le versioni dei file delle tue mod con quelle della patch 4.2.<br>
+		Per facilitarti il compito, abbiamo incluso la "HotTeaMod" all'interno della patch. Essa permette di dare un'occhiata alla struttura dei diversi file.<p>
+		<b>IMPORTANTE</b>: non utilizzare mai i seguenti caratteri, in quanto si tratta di caratteri di controllo XML! <b>< > & " ' =</b><br><br>
+		
+		<b>1) Struttura di una mod:</b><br>
+		È importante usare la struttura corretta per la cartella. Le mod utilizzano la struttura originale della cartella di "The Guild 2 Renaissance".<br>
+		Esempio: la cartella di installazione di TG2REN/mods/NOME DELLA TUA MOD/struttura cartella di TG2REN.<br>
+		È necessario inoltre aggiungere 3 nuovi file, data.xml, description.html e text.xml, nel percorso principale della mod.<br><br>
+		
+		<b>2) Struttura del file data.xml:</b><br> 
+		Come riferimento, si consiglia di modificare il file data.xml della mod di esempio nella seguente maniera.<p>
+		<ul>
+		 <li><i>Autore</i>: tu :)<br></li>
+		 <li><i>Versione</i>: qui inserisci la versione della tua mod.<br></li>
+		 <li><i>Titolo</i>: qui inserisci il titolo della tua mod.<br></li>
+		 <li><i>File</i>: i file che vanno completamente sostituiti, modificati o aggiunti dalla tua mod vengono messi in un file tag.</li>
+		 Questo passaggio va eseguito per ogni file della mod, altrimenti il ModLauncher non funzionerà.</li>
+		 <li><i>Percorso</i>: qui inserisci il percorso corretto del file che deve essere sostituito o modificato dal ModLauncher.</li>
+		 Esempio: .\mods\NOME DELLA TUA MOD\STRUTTURA CORRETTA DELLA CARTELLA\IL TUO FILE MODIFICATO COMPRESA ESTENSIONE<br>
+		\mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga
+		 <li><i>Stato</i>: sotto ogni file tag è presente un tag di stato che indica al ModLauncher come gestire il file in questione.</li>
+		È possibile usare i seguenti tag di stato: "nuovo" (nel caso in cui sia necessario aggiungere un file completamente nuovo, ad esempio uno che non esiste) e "modificato" (se il file esiste ma è stato modificato dalla tua mod).<br>
+		<b>NOTA</b>: i file originali che sono stati modificati e a cui è stato assegnato il tag modificato vengono salvati nella cartella mods/Origin.
+		</ul>
+		
+		<b>3) Struttura del file description.html:</b><br> 
+		Come riferimento, si consiglia di modificare il file description.html della mod di esempio.<br>
+		Il file description.html viene aperto nel ModLauncher dopo aver selezionato una mod tra quelle presenti nell'elenco. Esso contiene tutte le informazioni sulla mod.<br>
+		Il file è in formato html ed è facilmente modificabile. Come si può vedere nel file di esempio, il file description.html può essere impostato anche in diverse lingue.<br><br>
+		
+		<b>4) Struttura del file text.xml:</b><br> 
+		Come riferimento, si consiglia di copiare il file text.xml dalla mod di esempio e adattarlo alla tua mod.<br>
+		Il file text.xml può essere impostato in diverse lingue. Il ModLauncher riconosce la versione della lingua scelta di <b>The Guild 2 Renaissance</b> (situata all'interno del file config.ini) e provvede a installarla direttamente dal file text.xml. Se la lingua selezionata non è disponibile nel file text.xml, verrà usato automaticamente l'inglese. Se anche la lingua inglese non dovesse essere disponibile, verrà utilizzata la prima tra quelle presenti nell'elenco.<br>
+		Il file text.dbt di <b>The Guild 2 Renaissance</b> non <b>necessita</b> di modifiche. Tutti i testi aggiunti o modificati dal file text.xml verranno adattati automaticamente dal ModLauncher.<p>
+		<ul>
+		 <li><i>ID</i>: l'ID del testo, assegnato dal ModLauncher nel file text.dbt (deve essere unico, tranne per lo stato "modificato", in quanto viene usato l'ID della versione originale)</li>
+		 <b>IMPORTANTE</b>: gli ID del testo devono essere maggiori di 18000, in modo da garantire la compatibilità della tua mod con le patch future:).<br>
+		 <li><i>Etichetta</i>: l'etichetta unica del testo, utilizzata come identificatore per il testo all'interno del gioco. Es.: _ITEM_HerbTea_NAME_+0.</li>
+		 <li><i>Lingua testo="LA LINGUA DEL TESTO es. "english" per l'inglese"</i>: inserisci qui il tuo testo per associarlo all'etichetta di cui sopra.</li>
+		 <b>NOTA</b>: <b>la patch 4.2 di The Guild 2 Renaissance</b> è stata localizzata nelle seguenti lingue: inglese, tedesco, francese, spagnolo, italiano, polaco.<br>
+		 <li><i>Stato</i>:il tag stato indica se il testo esistente va modificato o se è necessario aggiungere del testo completamente nuovo. Si possono usare i tag "nuovo" (per i testi nuovi) e "modificato" (per i testi da modificare).</li>
+		</ul>
+
+		<a href="#italian">[ indietro ]</a>
+
+		<p><hr></p>
+
+		<a name="polish"><h1><img src="../Textures/ModLauncher/pl.gif"> Polski - Instrukcja</h1></a>
+		Witaj w aplikacji <b>The Guild 2 - Renesans ModLauncher</b><p>
+		<h2>Spis tre&#347;ci</h2>
+		<li><a href="#polish_whatis">Aplikacja ModLauncher<a></li>
+		<li><a href="#polish_functions">Jak dzia&#322;a ModLauncher<a></li>
+		<li><a href="#polish_modder">Przygotowywanie struktury modyfikacji (dla modder&#243;w)<a></li>
+		
+		<a name="polish_whatis"></a>
+		<h2>Aplikacja ModLauncher</h2>
+		ModLauncher zosta&#322; opracowany w celu u&#322;atwienia instalacji pojedynczych modyfikacji dla gry <b>The Guild 2 - Renesans</b>. Podczas procesu instalacji tworzone s&#261; kopie zapasowe oryginalnych plik&#243;w oraz zapis&#243;w gier, a dopiero p&#243;&#378;niej instalowane s&#261; nowe i/lub zmienione pliki.<br>
+		W przypadku przywracania oryginalnej wersji gry lub instalacji innej modyfikacji, wszelkie zapisy r&#243;wnie&#380; s&#261; archiwizowane wraz z dan&#261; modyfikacj&#281;, zatem nic nie powinno zgin&#261;&#263;.<br><br>
+		
+		<a href="#polish">[ wr&#243;&#263; ]</a><p>
+		
+		<a name="polish_functions"></a>
+		<h2>Jak dzia&#322;a ModLauncher</h2>
+		<b>1) Instalacja modyfikacji:</b><br>
+		W celu instalacji modyfikacji wypakuj j&#261; do nast&#281;puj&#261;cego folderu:<br><br>
+		<b>Folder instalacji The Guild 2 - Renesans/mods/</b><br><br>
+		Upewnij si&#281;, i&#380; pobrana modyfikacja jest zgodna z aplikacj&#261; ModLauncher (modyfikacja dla gry w wersji 4.2).<br>
+		Struktura modyfikacji powinna wygl&#261;da&#263; nast&#281;puj&#261;co: Nazwa modyfikacji/Struktura folder&#243;w gry The Guild 2 - Renesans.<br><br>
+		
+		<b>2) Aktywacja modyfikacji:</b><br>
+		Kiedy ju&#380; wypakujesz modyfikacj&#281; zgodnie z pkt. 1, uruchom ModLauncher (podczas instalacji aktualizacji mo&#380;esz zgodzi&#263; si&#281; na utworzenie skr&#243;tu do aplikacji ModLauncher na swoim pulpicie). Kliknij "Manage Modification" (zarz&#261;dzaj modyfikacjami), a zobaczysz okno z list&#261; wszystkich dost&#281;pnych modyfikacji (np. tych, kt&#243;re prawid&#322;owo wypakowa&#322;e&#347;).<p>
+		<b>WA&#379;NA INFORMACJA</b>: Mo&#380;na aktywowa&#263; tylko jedn&#261; modyfikacj&#281; w danym czasie!<p>
+		Wybierz modyfikacj&#281;, kt&#243;r&#261; chcesz aktywowa&#263;. Informacja o niej pojawi si&#281; w oknie aplikacji ModLauncher. W celu aktywacji modyfikacji kliknij "Apply" (zastosuj). ModLauncher nadpisze w&#243;wczas wszystkie niezb&#281;dne pliki w katalogu gry. Nast&#281;pnie kliknij "Back" (wr&#243;&#263;) i w ko&#324;cu "Start the Game" (uruchom gr&#281;) z poziomu g&#322;&#243;wnego menu aplikacji ModLauncher.<br>
+		Gra uruchomi si&#281;, a wybrana modyfikacja b&#281;dzie ju&#380; aktywna.<br><br>
+		
+		<b>3) Dezaktywacja modyfikacji:</b><br>
+		W celu dezaktywacji modyfikacji uruchom ModLauncher, kliknij "Manage Modification" (zarz&#261;dzaj modyfikacjami), wybierz aktywn&#261; modyfikacj&#281; i kliknij "Reset to Original Version" (przywr&#243;&#263; wersj&#281; oryginaln&#261;). ModLauncher przywr&#243;ci oryginalne pliki gry i usunie pliki dodane przez modyfikacj&#281;.<br><br>
+		
+		<a href="#polish">[ wr&#243;&#263; ]</a><p>
+		
+		<a name="polish_modder"></a>
+		<h2>Przygotowywanie struktury modyfikacji (dla modder&#243;w)</h2>
+		Wystarczy kilka krok&#243;w, aby przystosowa&#263; Twoj&#261; modyfikacj&#281; do obs&#322;ugi przez aplikacj&#281; ModLauncher. Wa&#380;ne, by pliki modyfikacji by&#322;y zgodne z plikami gry z wersji 4.2.<br>
+		W aktualizacji 4.2 zawarli&#347;my przyk&#322;adow&#261; modyfikacj&#281; "HotTeaMod", kt&#243;ra pos&#322;u&#380;y nam za przyk&#322;ad. Mo&#380;esz zapozna&#263; si&#281; ze struktur&#261; poszczeg&#243;lnych plik&#243;w ten modyfikacji, co u&#322;atwi Ci prac&#281; nad w&#322;asn&#261; modyfikacj&#261;.<p>
+		<b>WA&#379;NA INFORMACJA</b>: Nigdy nie stosuj w tre&#347;ci znak&#243;w zarezerwowanych dla struktury XML! Tymi znakami s&#261;: <b>< > & " ' =</b><br><br>
+		
+		<b>1) Struktura modyfikacji:</b><br>
+		Bardzo istotn&#261; kwesti&#261; podczas przygotowywania modyfikacji jest zachowanie prawid&#322;owej struktury folder&#243;w, zgodnej ze struktur&#261; katalog&#243;w gry "The Guild 2 - Renesans".<br>
+		Przyk&#322;ad: Katalog instalacji The Guild 2 - Renesans/mods/NAZWA TWOJEJ MODYFIKACJI/Struktura zgodna ze struktur&#261; The Guild 2 - Renesans.<br>
+		Dodatkowo modyfikacja wymaga 3 nowych plik&#243;w. S&#261; to: data.xml, description.html oraz text.xml, kt&#243;re musz&#261; znajdowa&#263; si&#281; w g&#322;&#243;wnym katalogu Twojej modyfikacji.<br><br>
+		
+		<b>2) Struktura pliku data.xml:</b><br> 
+		Jako postaw&#281; zaleca si&#281; wykorzystanie pliku, kt&#243;ry znajduje si&#281; w modyfikacji przyk&#322;adowej.<p>
+		<ul>
+		 <li><i>Author</i>: To ty, autor :)<br></li>
+		 <li><i>Version</i>: W to pole wprowad&#378; numer wersji swojej modyfikacji.<br></li>
+		 <li><i>Title</i>: W to pole wprowad&#378; tytu&#322; swojej modyfikacji.<br></li>
+		 <li><i>File</i>: W tym miejscu wprowad&#378; list&#281; plik&#243;w, kt&#243;re maj&#261; zosta&#263; zast&#261;pione, zmodyfikowane b&#261;d&#378; dodane przez Twoj&#261; modyfikacj&#281; wraz z okre&#347;leniem ich stanu - opisane poni&#380;ej.</li>
+		 Ten krok musi zosta&#263; powt&#243;rzony dla ka&#380;dego pliku Twojej modyfikacji, w innym wypadku ModLauncher nie b&#281;dzie wiedzia&#322; jak post&#261;pi&#263; z plikami.</li>
+		 <li><i>Path</i>: W tym miejscu wprowad&#378; &#347;cie&#380;k&#281; dla danego pliku, kt&#243;ry powinien zosta&#263; zast&#261;piony b&#261;d&#378; zmodyfikowany przez aplikacj&#281; ModLauncher.</li>
+		 Przyk&#322;ad: <br>
+		 .\mods\NAZWA MODYFIKACJI\PRAWID&#321;OWA STRUKTURA KATALOG&#211;W\TWOJA WERSJA PLIKU WRAZ Z ROZSZERZENIEM<br>
+		 .\mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga
+		 <li><i>State</i>: Poni&#380;ej ka&#380;dego pliku znajdziesz oznaczenie jego stanu. Ten parametr przekazuje aplikacji ModLauncher jak post&#261;pi&#263; z danym plikiem.</li>
+		Dozwolone s&#261; nast&#281;puj&#261;ce parametry stanu: "new" (dla plik&#243;w ca&#322;kowicie nowych, np. dla tych, kt&#243;re nie istniej&#261; w grze) oraz "changed" (dla plik&#243;w, kt&#243;re istniej&#261; w grze, ale maj&#261; zosta&#263; zmienione przez Twoj&#261; modyfikacj&#281;).<br>
+		<b>UWAGA</b>: Oryginalne pliki, kt&#243;re s&#261; zmieniane przez modyfikacj&#281; (oznaczone odpowiedni parametrem stanu), s&#261; zapisywane w folderze "mods/Origin".
+		</ul>
+		
+		<b>3) Struktura pliku description.html:</b><br> 
+		Jako podstaw&#281; zaleca si&#281; wykorzystanie pliku description.html, kt&#243;ry znajduje si&#281; w modyfikacji przyk&#322;adowej.<br>
+		Plik description.html jest otwierany przez ModLauncher, gdy dana modyfikacja jest wybrana z listy. Powinien zawiera&#263; wszystkie informacje zwi&#261;zane z modyfikacj&#261;.<br>
+		Plik zapisany jest w formacie html i mo&#380;e by&#263; edytowany bez najmniejszych problem&#243;w np. za pomoc&#261; edytora tekstu (Notatnik czy Notepad++). Jak wida&#263; w przyk&#322;adowym pliku, description.html mo&#380;e zawiera&#263; opisy w kilku j&#281;zykach.<br><br>
+		
+		<b>4) Struktura pliku text.xml:</b><br> 
+		Jak podstaw&#281; zaleca si&#281; wykorzystanie kopii pliku text.xml z modyfikacji przyk&#322;adowej i dostosowanie go do swojego projektu.<br>
+		Plik text.xml mo&#380;e zawiera&#263; kilka j&#281;zyk&#243;w. ModLauncher rozpoznaje wybrany j&#281;zyk gry <b>The Guild 2 - Renesans</b> (okre&#347;lany na podstawie pliku config.ini), a nast&#281;pnie podczas instalacji wprowadza zmiany dla danego j&#281;zyka, kt&#243;re znajdzie w pliku text.xml. Je&#347;li wybrany j&#281;zyk nie jest dost&#281;pny w pliku text.xml, ModLauncher automatycznie wybierze j&#281;zyk angielski. W przypadku braku j&#281;zyka angielskiego, wykorzystany zostanie pierwszy dost&#281;pny j&#281;zyk z pliku.<br>
+		Plik text.dbt z gry <b>The Guild 2 - Renesans</b>, czyli g&#322;&#243;wny plik z tekstami, <b>nie</b> musi by&#263; modyfikowany. Wszystkie teksty dodane lub zmienione, kt&#243;re s&#261; zawarte w pliku text.xml, b&#281;d&#261; odpowiednio przeniesione do g&#322;&#243;wnego pliku tekstowego przez aplikacj&#281; ModLauncher.<p>
+		<ul>
+		 <li><i>ID</i>: Numer ID tekstu, kt&#243;ry ma zosta&#263; przypisany przez ModLauncher w pliku text.dbt (dla nowych tekst&#243;w numer ID musi by&#263; niepowtarzalny, dla tekst&#243;w oznaczonych parametrem stanu "changed", numer ID musi by&#263; zgodny z oryginalnym wpisem)</li>
+		 <b>WA&#379;NA INFORMACJA</b>: ID tekst&#243;w nowych musz&#261; by&#263; wy&#380;sze nic 18000, gdy&#380; ni&#380;sze warto&#347;ci zarezerwowane s&#261; dla gry i przysz&#322;ych aktualizacji :).<br>
+		 <li><i>Label</i>: Unikatowa etykieta tekstu, kt&#243;ra jest przyporz&#261;dkowana tre&#347;ci wy&#347;wietlanej w grze, np.: _ITEM_HerbTea_NAME_+0.</li>
+		 <li><i>Text language=</i>J&#281;zyk tekstu np. <i>"polish"</i> dla j&#281;zyka polskiego<i>:</i> Tu wpisz sw&#243;j tekst, kt&#243;ry b&#281;dzie powi&#261;zany z etykiet&#261; opisan&#261; powy&#380;ej.</li>
+		 <b>UWAGA</b>: Aktualizacja 4.2 dla gry <b>The Guild 2 - Renesans</b> zosta&#322;a przygotowana dla nast&#281;puj&#261;cych j&#281;zyk&#243;w: angielski, niemiecki, francuski, hiszpa&#324;ski, w&#322;oski oraz polski.<br>
+		 <li><i>State</i>: Parametr stanu okre&#347;la czy dany tekst jest nowy, czy jest tekstem zmodyfikowanym wyst&#281;puj&#261;cym ju&#380; w grze. Warto&#347;&#263; "new" oznacza nowy teksty, a warto&#347;&#263; "changed" oznacza teksty, kt&#243;ry zmienia ju&#380; istniej&#261;cy w grze.</li>
+		</ul>
+
+		<a href="#polish">[ wr&#243;&#263; ]</a>
+
+		</body>
+</html>

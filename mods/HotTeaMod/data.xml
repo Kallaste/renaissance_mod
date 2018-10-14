@@ -1,0 +1,23 @@
+﻿<modlist>
+<information>
+	<author>RUNEFORGE Game Studio</author>
+	<version>1.0 (for TG2Ren 4.2)</version>
+	<title english="HotTeaMod" german="HotTeaMod" french="HotTeaMod"></title>
+</information>
+	<file>
+	  <path>.\mods\HotTeaMod\DB\Measures.dbt</path>
+	  <state>changed</state>
+	</file>
+	<file>
+	  <path>.\mods\HotTeaMod\DB\MeasureToObjects.dbt</path>
+	  <state>changed</state>
+	</file>
+	<file>
+	  <path>.\mods\HotTeaMod\Scripts\Measures\HotTea.lua</path>
+	  <state>new</state>
+	</file>
+	<file>
+	  <path>.\mods\HotTeaMod\Textures\Hud\Buttons\btn_UseHotTea.tga</path>
+	  <state>new</state>
+	</file>
+</modlist>

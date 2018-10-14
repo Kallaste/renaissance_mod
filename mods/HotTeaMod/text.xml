@@ -1,0 +1,134 @@
+﻿<textlist>		
+	<text>	
+		<id>9418</id>
+		<label>_ITEM_HerbTea_NAME_+0</label>
+		<text language="english">normal Herbal Tea</text>
+		<text language="german">normaler Kräuter~tee</text>
+		<text language="french">Infusion normale</text>
+		<text language="spanish">infusión normal</text>
+		<text language="italian">Tè alle erbe normale</text>
+		<text language="polish">zwyczajna Herbata Ziołowa</text>
+		<state>changed</state>
+	</text>	
+	<text>	
+		<id>9419</id>
+		<label>_ITEM_HerbTea_NAME_+1</label>
+		<text language="english">normal Herbal Teas</text>
+		<text language="german">normale Kräuter~tees</text>
+		<text language="french">Infusions normales</text>
+		<text language="spanish">infusiones normales</text>
+		<text language="italian">Tè alle erbe normali</text>
+		<text language="polish">zwyczajne Herbaty Ziołowe</text>
+		<state>changed</state>
+	</text>	
+	<text>	
+		<id>9420</id>
+		<label>_ITEM_HerbTea_TOOLTIP_+0</label>
+		<text language="english">Herbal tea should be taken by anybody not wanting to be stricken by disease. Herbal tea is recommended just as a hot drink, but it is not said to have any strange powers...</text>
+		<text language="german">Kräutertee sollte zu sich nehmen, wer nicht von einer Krankheit befallen werden möchte. Gerade als Heißgetränk ist der Kräutertee zu empfehlen, allerdings werden ihm keine wunderlichen Kräfte nachgesagt...</text>
+		<text language="french">Les infusions sont recommandées à tous ceux qui ne souhaitent pas être frappés par la maladie. Les infusions sont une agréable boisson chaude, mais on leur connaît aucun pouvoir surnaturel...</text>
+		<text language="spanish">Las infusiones están indicadas para todo aquel que quiera prevenir las enfermedades. Son una reconfortante bebida caliente, pero no se les atribuye ningún poder extraño...</text>
+		<text language="italian">Il tè alle erbe è una bevanda calda consigliata a tutti coloro che non vogliono ammalarsi. Chissà che non possieda anche degli strani poteri...</text>
+		<text language="polish">Herbata ziołowa powinna być zażywana przez każdego, kto chce uniknąć choroby. Zaleca się przyjmowanie herbaty ziołowej w postaci gorącego naparu, zazwyczaj nie posiada jednak nadzwyczajnych właściwości...</text>
+		<state>changed</state>
+	</text>	
+	<text>	
+		<id>18000</id>
+		<label>_MEASURE_HotTea_NAME_+0</label>
+		<text language="english">Time for a hot tea?</text>
+		<text language="german">Zeit für einen heißen Tee?</text>
+		<text language="french">Avez-vous le temps de boire un thé chaud?</text>
+		<text language="spanish">¿Un té caliente?</text>
+		<text language="italian">Ti va un tè caldo?</text>
+		<text language="polish">Czas na gorącą herbatę?</text>		
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18001</id>
+		<label>_MEASURE_HotTea_TOOLTIP_+0</label>
+		<text language="english">This hot tea was infused from the most extraordinary and most potent herbs from distant trading posts. It is supposed to be imbued with curious powers, if the rumours are to be believed...</text>
+		<text language="german">Dieser heiße Tee wurde aus den wunderlichsten und gleichsam potentesten Kräutern aus fernen Kontoren aufgegossen. Ihm sollen, wenn man den Gerüchten Glauben schenken mag, wunderliche Kräfte innewohnen...</text>
+		<text language="french">Ce thé chaud a été infusé à partir des herbes les plus extraordinaires et puissantes, originaires de comptoirs lointains. Si l'on en croit la rumeur, il posséderait d'étranges pouvoirs...</text>
+		<text language="spanish">Este té caliente está elaborado con hierbas extraordinarias y poderosas obtenidas en lejanos puestos comerciales. Según los rumores, posee unos poderes muy particulares...</text>
+		<text language="italian">Questo tè caldo è un infuso a base delle erbe più potenti e straordinarie provenienti da stazioni commerciali lontane. Pare abbia strani poteri, o almeno così dicono...</text>
+		<text language="polish">Ten gorący wywar herbaty ziołowej został przygotowany na bazie najwyższej jakości najznamienitszych gatunków ziół z najdalszych przyczółków handlowych. Mawia się, iż posiada tajemnicze właściwości...</text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18002</id>
+		<label>_MEASURE_HotTea_TARGET_+0</label>
+		<text language="english"></text>
+		<text language="german"></text>
+		<text language="french"></text>
+		<text language="spanish"></text>
+		<text language="italian"></text>
+		<text language="polish"></text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18003</id>
+		<label>_MEASURE_HotTea_TITLE_+0</label>
+		<text language="english">Hot Tea</text>
+		<text language="german">Heißer Tee</text>
+		<text language="french">Thé chaud</text>
+		<text language="spanish">Té caliente</text>
+		<text language="italian">Tè caldo</text>
+		<text language="polish">Gorąca herbata</text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18004</id>
+		<label>_MEASURE_HotTea_IMMORTAL_+0</label>
+		<text language="english">immortal</text>
+		<text language="german">unsterblich</text>
+		<text language="french">immortel</text>
+		<text language="spanish">inmortal</text>
+		<text language="italian">immortale</text>
+		<text language="polish">nieśmiertelność</text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18005</id>
+		<label>_MEASURE_HotTea_RICHNOBLE_+0</label>
+		<text language="english">rich + noble</text>
+		<text language="german">reich + adlig</text>
+		<text language="french">riche et noble</text>
+		<text language="spanish">rico y noble</text>
+		<text language="italian">ricco + nobile</text>
+		<text language="polish">bogactwo + szlachetność</text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18006</id>
+		<label>_MEASURE_HotTea_MAYOR_+0</label>
+		<text language="english">Mayor</text>
+		<text language="german">Bürgermeister</text>
+		<text language="french">Maire</text>
+		<text language="spanish">Alcalde</text>
+		<text language="italian">Sindaco</text>
+		<text language="polish">Burmistrz</text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18007</id>
+		<label>_MEASURE_HotTea_IMMORTAL_QUICK_+0</label>
+		<text language="english">%1SN is now immortal...</text>
+		<text language="german">%1SN ist nun unsterblich...</text>
+		<text language="french">%1SN est maintenant immortel...</text>
+		<text language="spanish">Ahora %1SN es inmortal...</text>
+		<text language="italian">%1SN ora è immortale...</text>
+		<text language="polish">%1SN zyskuje nieśmiertelność...</text>
+		<state>new</state>
+	</text>	
+	<text>	
+		<id>18008</id>
+		<label>_MEASURE_HotTea_IMMORTAL_QUICK_+1</label>
+		<text language="english">%1SN is now mortal again...</text>
+		<text language="german">%1SN ist nun wieder sterblich...</text>
+		<text language="french">%1SN est de nouveau mortel...</text>
+		<text language="spanish">Ahora %1SN es mortal de nuevo...</text>
+		<text language="italian">%1SN ora è nuovamente mortale...</text>
+		<text language="polish">%1SN traci nieśmiertelność...</text>
+		<state>new</state>
+	</text>	
+</textlist>
